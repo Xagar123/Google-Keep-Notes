@@ -9,7 +9,7 @@ import FirebaseFirestore
 
 class LoginViewController: UIViewController {
     
-    let signInConfig = GIDConfiguration(clientID: "529423950880-8mr3b48mq38uj3o7hlr1g34633k42o7f.apps.googleusercontent.com")
+    let signInConfig = GIDConfiguration(clientID: "318084081471-oh5blunfq2e8aif0k80end8ikr5cm4tq.apps.googleusercontent.com")
 
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -115,12 +115,12 @@ class LoginViewController: UIViewController {
     
     func transitionToHome(){
         let homeVC = storyboard?.instantiateViewController(withIdentifier: "ContainerController") as! ContainerController
-//        let container = ContainerController()
-//        let nav = UINavigationController(rootViewController: homeVC)
-//        nav.modalPresentationStyle = .fullScreen
-//       present(nav,animated: true)
+        let container = ContainerController()
+        let nav = UINavigationController(rootViewController: homeVC)
+        nav.modalPresentationStyle = .fullScreen
+       present(nav,animated: true)
         
-        self.navigationController?.pushViewController(homeVC, animated: true)
+       // self.navigationController?.pushViewController(homeVC, animated: true)
 //        view.window?.rootViewController = "HomeViewController"
 //        view.window?.makeKeyAndVisible()
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bYP-t7-YQC">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="CCV-J3-eV6">
             <objects>
-                <viewController id="h0h-El-Jq6" customClass="ViewController" customModule="Social_Login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h0h-El-Jq6" customClass="ViewController" customModule="Google_Keep_Note_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9wY-Il-OID">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,11 +44,18 @@
                                     <constraint firstItem="biR-Oe-L4n" firstAttribute="height" secondItem="R6R-De-hjm" secondAttribute="height" id="aqm-gj-Z2k"/>
                                 </constraints>
                             </stackView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lmH-O0-mAI">
+                                <rect key="frame" x="75" y="262" width="240" height="159"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yEi-Lc-Kax"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lmH-O0-mAI" firstAttribute="top" secondItem="yEi-Lc-Kax" secondAttribute="top" constant="171" id="Jnc-md-73G"/>
+                            <constraint firstItem="yEi-Lc-Kax" firstAttribute="trailing" secondItem="lmH-O0-mAI" secondAttribute="trailing" constant="75" id="KES-vM-pH2"/>
+                            <constraint firstItem="dVo-wt-l0I" firstAttribute="top" secondItem="lmH-O0-mAI" secondAttribute="bottom" constant="229" id="L2P-IC-sYy"/>
                             <constraint firstItem="yEi-Lc-Kax" firstAttribute="trailing" secondItem="dVo-wt-l0I" secondAttribute="trailing" constant="40" id="RTa-eF-JQn"/>
+                            <constraint firstItem="lmH-O0-mAI" firstAttribute="leading" secondItem="yEi-Lc-Kax" secondAttribute="leading" constant="75" id="qGb-AD-e2Q"/>
                             <constraint firstItem="dVo-wt-l0I" firstAttribute="leading" secondItem="yEi-Lc-Kax" secondAttribute="leading" constant="40" id="rOZ-eZ-G9H"/>
                             <constraint firstItem="yEi-Lc-Kax" firstAttribute="bottom" secondItem="dVo-wt-l0I" secondAttribute="bottom" constant="40" id="uGh-Ub-TSb"/>
                         </constraints>
@@ -66,7 +73,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="RZM-bQ-NRm">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="3wL-iV-hFZ" customClass="SignUpViewController" customModule="Social_Login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="3wL-iV-hFZ" customClass="SignUpViewController" customModule="Google_Keep_Note_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RFg-Gv-hrZ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +187,7 @@
         <!--Login View Controller-->
         <scene sceneID="bbx-rv-nRQ">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="Dnb-cZ-rnQ" customClass="LoginViewController" customModule="Social_Login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Dnb-cZ-rnQ" customClass="LoginViewController" customModule="Google_Keep_Note_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pdN-GX-tOC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -345,7 +352,7 @@
         <!--Container Controller-->
         <scene sceneID="7Kb-0x-FXa">
             <objects>
-                <viewController storyboardIdentifier="ContainerController" id="3Ux-l8-kL6" customClass="ContainerController" customModule="Social_Login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContainerController" id="3Ux-l8-kL6" customClass="ContainerController" customModule="Google_Keep_Note_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J0M-53-pxJ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,6 +385,7 @@
     </scenes>
     <resources>
         <image name="google" width="42" height="42.666667938232422"/>
+        <image name="image" width="224" height="224"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

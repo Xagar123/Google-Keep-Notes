@@ -64,10 +64,12 @@ class NoteViewController: UIViewController {
             var ref:DocumentReference? = nil
             
             let documentRef = self.db.collection("USER").document()
-            let userData = [
+            let userData:[String : Any] = [
                 "noteTitle": inputTitle,
           "noteDescription": inputNote,
-                "id": documentRef.documentID
+                "id": documentRef.documentID,
+                "date": Timestamp(date: Date())
+                
             ]
             ref = self.db.collection("USER").addDocument(data: userData){
                 (error:Error?) in

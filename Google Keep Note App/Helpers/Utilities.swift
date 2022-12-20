@@ -54,6 +54,25 @@ class Utilities {
         button.tintColor = UIColor.black
     }
     
+    static let floatingButton: UIButton = {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+        
+        //corner radius
+       // button.layer.masksToBounds = true
+        button.layer.cornerRadius = 30
+        button.backgroundColor = .systemPink
+        
+        let image = UIImage(systemName: "plus", withConfiguration: UIImage.SymbolConfiguration(pointSize:32 , weight: .medium ))
+        button.setImage(image, for: .normal)
+        button.tintColor = .white
+        button.setTitleColor(.white, for: .normal)
+        
+        //adding shadow
+        button.layer.shadowRadius = 10
+        button.layer.shadowOpacity = 0.8
+        return button
+    }()
+    
     static func isPasswordValid(_ password : String) -> Bool {
         
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")

@@ -38,8 +38,8 @@ class UpdateViewController: UIViewController {
     
     var field1: String! = nil
     var field2: String! = nil
-    var idField: DocumentReference? = nil
-    
+    //var idField: DocumentReference? = nil
+    var idField: String! = nil
     public var completion: ((String) -> Void)?
     
     let db = Firestore.firestore()

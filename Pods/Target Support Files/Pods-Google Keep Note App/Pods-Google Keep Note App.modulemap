@@ -1,0 +1,6 @@
+framework module Pods_Google_Keep_Note_App {
+  umbrella header "Pods-Google Keep Note App-umbrella.h"
+
+  export *
+  module * { export * }
+}

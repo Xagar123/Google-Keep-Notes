@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElement()
-        view.backgroundColor = .systemPink
+        view.backgroundColor = .white
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     func setUpElement(){
         
         Utilities.styleFilledButton(signUpButton)
-        Utilities.styleHollowButtonHome(loginButton)
+        Utilities.styleHollowButton(loginButton)
     }
 
     

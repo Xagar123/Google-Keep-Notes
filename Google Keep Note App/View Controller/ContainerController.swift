@@ -90,8 +90,7 @@ class ContainerController: UIViewController {
             print("Navigatae to home")
         case .Reminders:
             print("Navigatae to home")
-            let homeVC = storyboard?.instantiateViewController(withIdentifier: "ContainerController") as! ContainerController
-            let container = SettingViewController()
+            let container = ReminderViewController()
             let newVC = UINavigationController(rootViewController: container)
             present(newVC, animated: true)
         case .CreateNewlable:
@@ -108,9 +107,10 @@ class ContainerController: UIViewController {
             print("Navigatae to home")
         case .Setting:
             print("Navigatae to home")
-//            let container = SettingViewController()
-//                container.userName = "Sam"
-//                container.modalPresentationStyle = .fullScreen
+            let container = SettingViewController()
+                container.userName = "Sam"
+                container.modalPresentationStyle = .fullScreen
+            present(UINavigationController(rootViewController: container), animated: true)
         case .HelpAndfeedback:
             print("Navigatae to home")
         }

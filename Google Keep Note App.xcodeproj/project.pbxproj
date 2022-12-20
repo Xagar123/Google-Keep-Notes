@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846DA00B293FDE06009E50EA /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DA00A293FDE06009E50EA /* ReminderViewController.swift */; };
+		846DA00D293FDEF2009E50EA /* MyReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DA00C293FDEF2009E50EA /* MyReminder.swift */; };
 		8491253E293D93CB00F55D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491253D293D93CB00F55D76 /* AppDelegate.swift */; };
 		84912540293D93CB00F55D76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491253F293D93CB00F55D76 /* SceneDelegate.swift */; };
 		84912545293D93CB00F55D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84912543293D93CB00F55D76 /* Main.storyboard */; };
@@ -29,9 +31,14 @@
 		84912574293D945000F55D76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84912568293D945000F55D76 /* LoginViewController.swift */; };
 		84912575293D945000F55D76 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84912569293D945000F55D76 /* MenuController.swift */; };
 		84912576293D945000F55D76 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491256A293D945000F55D76 /* PhotoCollectionViewCell.swift */; };
+		84D87D70294C977900605593 /* ReminderAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D87D6F294C977900605593 /* ReminderAddController.swift */; };
+		84DFEB59293E963200AE240C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84DFEB58293E963200AE240C /* GoogleService-Info.plist */; };
+		95BCE44C7EDF61B88781AD05 /* Pods_Google_Keep_Note_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A88D6A3BE2B9B6B0DB856D /* Pods_Google_Keep_Note_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		846DA00A293FDE06009E50EA /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		846DA00C293FDEF2009E50EA /* MyReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReminder.swift; sourceTree = "<group>"; };
 		8491253A293D93CB00F55D76 /* Google Keep Note App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google Keep Note App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8491253D293D93CB00F55D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8491253F293D93CB00F55D76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +63,11 @@
 		84912568293D945000F55D76 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84912569293D945000F55D76 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		8491256A293D945000F55D76 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		84D87D6F294C977900605593 /* ReminderAddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderAddController.swift; sourceTree = "<group>"; };
+		84DFEB58293E963200AE240C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C0453EE549D9091C850B5C50 /* Pods-Google Keep Note App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Keep Note App.debug.xcconfig"; path = "Target Support Files/Pods-Google Keep Note App/Pods-Google Keep Note App.debug.xcconfig"; sourceTree = "<group>"; };
+		F7A88D6A3BE2B9B6B0DB856D /* Pods_Google_Keep_Note_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Keep_Note_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEE07F8409A4A12279C3C80 /* Pods-Google Keep Note App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Keep Note App.release.xcconfig"; path = "Target Support Files/Pods-Google Keep Note App/Pods-Google Keep Note App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +75,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BCE44C7EDF61B88781AD05 /* Pods_Google_Keep_Note_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C592AE601434DEFD01347B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0453EE549D9091C850B5C50 /* Pods-Google Keep Note App.debug.xcconfig */,
+				FDEE07F8409A4A12279C3C80 /* Pods-Google Keep Note App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84912531293D93CB00F55D76 = {
 			isa = PBXGroup;
 			children = (
 				8491253C293D93CB00F55D76 /* Google Keep Note App */,
 				8491253B293D93CB00F55D76 /* Products */,
+				28C592AE601434DEFD01347B /* Pods */,
+				85BC8BFF44B2DA107451DDA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +122,7 @@
 				84912546293D93D000F55D76 /* Assets.xcassets */,
 				84912548293D93D000F55D76 /* LaunchScreen.storyboard */,
 				8491254B293D93D000F55D76 /* Info.plist */,
+				84DFEB58293E963200AE240C /* GoogleService-Info.plist */,
 			);
 			path = "Google Keep Note App";
 			sourceTree = "<group>";
@@ -115,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				84912557293D942A00F55D76 /* MenuOptionCell.swift */,
+				8491256A293D945000F55D76 /* PhotoCollectionViewCell.swift */,
+				84912566293D945000F55D76 /* CustomeTableViewCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -124,6 +151,7 @@
 			children = (
 				8491255A293D943700F55D76 /* Note.swift */,
 				8491255B293D943700F55D76 /* MenuOption.swift */,
+				846DA00C293FDEF2009E50EA /* MyReminder.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -131,20 +159,28 @@
 		8491255E293D944F00F55D76 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84912563293D945000F55D76 /* ViewController.swift */,
+				84912568293D945000F55D76 /* LoginViewController.swift */,
 				8491255F293D944F00F55D76 /* SignUpViewController.swift */,
 				84912560293D944F00F55D76 /* ContainerController.swift */,
-				84912561293D945000F55D76 /* SettingViewController.swift */,
-				84912562293D945000F55D76 /* SettingCollectionViewController.swift */,
-				84912563293D945000F55D76 /* ViewController.swift */,
 				84912564293D945000F55D76 /* HomeController.swift */,
 				84912565293D945000F55D76 /* UpdateViewController.swift */,
-				84912566293D945000F55D76 /* CustomeTableViewCell.swift */,
 				84912567293D945000F55D76 /* NoteViewController.swift */,
-				84912568293D945000F55D76 /* LoginViewController.swift */,
 				84912569293D945000F55D76 /* MenuController.swift */,
-				8491256A293D945000F55D76 /* PhotoCollectionViewCell.swift */,
+				846DA00A293FDE06009E50EA /* ReminderViewController.swift */,
+				84D87D6F294C977900605593 /* ReminderAddController.swift */,
+				84912561293D945000F55D76 /* SettingViewController.swift */,
+				84912562293D945000F55D76 /* SettingCollectionViewController.swift */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		85BC8BFF44B2DA107451DDA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7A88D6A3BE2B9B6B0DB856D /* Pods_Google_Keep_Note_App.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8491254E293D93D000F55D76 /* Build configuration list for PBXNativeTarget "Google Keep Note App" */;
 			buildPhases = (
+				6ED5F447087B1DEA275DCDF4 /* [CP] Check Pods Manifest.lock */,
 				84912536293D93CB00F55D76 /* Sources */,
 				84912537293D93CB00F55D76 /* Frameworks */,
 				84912538293D93CB00F55D76 /* Resources */,
+				4D35179A4860D89B723BC61E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,12 +244,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				8491254A293D93D000F55D76 /* LaunchScreen.storyboard in Resources */,
+				84DFEB59293E963200AE240C /* GoogleService-Info.plist in Resources */,
 				84912547293D93D000F55D76 /* Assets.xcassets in Resources */,
 				84912545293D93CB00F55D76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D35179A4860D89B723BC61E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google Keep Note App/Pods-Google Keep Note App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google Keep Note App/Pods-Google Keep Note App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Google Keep Note App/Pods-Google Keep Note App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ED5F447087B1DEA275DCDF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Google Keep Note App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84912536293D93CB00F55D76 /* Sources */ = {
@@ -223,13 +304,16 @@
 				84912555293D941100F55D76 /* Protocols.swift in Sources */,
 				8491256D293D945000F55D76 /* SettingViewController.swift in Sources */,
 				84912570293D945000F55D76 /* HomeController.swift in Sources */,
+				84D87D70294C977900605593 /* ReminderAddController.swift in Sources */,
 				84912575293D945000F55D76 /* MenuController.swift in Sources */,
 				8491256C293D945000F55D76 /* ContainerController.swift in Sources */,
 				8491255D293D943700F55D76 /* MenuOption.swift in Sources */,
 				84912558293D942A00F55D76 /* MenuOptionCell.swift in Sources */,
 				8491255C293D943700F55D76 /* Note.swift in Sources */,
+				846DA00D293FDEF2009E50EA /* MyReminder.swift in Sources */,
 				84912572293D945000F55D76 /* CustomeTableViewCell.swift in Sources */,
 				84912573293D945000F55D76 /* NoteViewController.swift in Sources */,
+				846DA00B293FDE06009E50EA /* ReminderViewController.swift in Sources */,
 				8491253E293D93CB00F55D76 /* AppDelegate.swift in Sources */,
 				8491256F293D945000F55D76 /* ViewController.swift in Sources */,
 				8491256B293D945000F55D76 /* SignUpViewController.swift in Sources */,
@@ -378,6 +462,7 @@
 		};
 		8491254F293D93D000F55D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0453EE549D9091C850B5C50 /* Pods-Google Keep Note App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -405,6 +490,7 @@
 		};
 		84912550293D93D000F55D76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDEE07F8409A4A12279C3C80 /* Pods-Google Keep Note App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
