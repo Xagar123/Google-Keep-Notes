@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseFirestore
+import FirebaseAuth
 
 class HomeController: UIViewController, UISearchBarDelegate{
     
@@ -88,7 +89,7 @@ class HomeController: UIViewController, UISearchBarDelegate{
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .systemBackground
         floatingButton.frame = CGRect(x: view.frame.size.width-70, y: view.frame.size.height-100, width: 60, height: 60)
         
     }
@@ -115,7 +116,8 @@ class HomeController: UIViewController, UISearchBarDelegate{
     }
     
     func loadingInitialData(){
-        let initialQuary = db.collection("USER")
+        guard let uid = FirebaseAuth.Auth.auth().currentUser?.uid else {return}
+        let initialQuary = self.db.collection("USER").document(uid).collection("Notes")
             .order(by: "noteTitle")
             .limit(to: 10)
         initialQuary.getDocuments { quarySnapshot, error in

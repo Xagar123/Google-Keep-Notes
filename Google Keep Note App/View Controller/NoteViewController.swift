@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseFirestore
 import FirebaseCore
+import FirebaseAuth
 
 class NoteViewController: UIViewController {
     
@@ -57,6 +58,7 @@ class NoteViewController: UIViewController {
     
     @objc func handleSaveButton(){
 
+        guard let uid = FirebaseAuth.Auth.auth().currentUser?.uid else{return}
         if let inputTitle = textField.text , let inputNote = noteField.text{
             
          //   let newData = Note(title: inputTitle, note: inputNote)
@@ -71,7 +73,7 @@ class NoteViewController: UIViewController {
                 "date": Timestamp(date: Date())
                 
             ]
-            ref = self.db.collection("USER").addDocument(data: userData){
+            ref = self.db.collection("USER").document(uid).collection("Notes").addDocument(data: userData){
                 (error:Error?) in
                         if let error = error{
                         print("\(error.localizedDescription)")
